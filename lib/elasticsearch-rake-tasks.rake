@@ -1,6 +1,7 @@
 require "json"
 require "elasticsearch-rake-tasks"
 require "eson-http"
+load "river/tasks/reindex.rake"
 
 # to set a custom logger
 # Elasticsearch::Logging.logger = MyLogger.new
