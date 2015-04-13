@@ -12,8 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{rake tasks for Elasticsearch}
   spec.homepage      = ""
   spec.license       = "MIT"
-
-  spec.files         = `git ls-files`.split($/)
+  spec.files         = ["Gemfile", "elasticsearch-rake-tasks.gemspec", "lib/elasticsearch-rake-tasks.rake", "lib/elasticsearch-rake-tasks.rb", "lib/elasticsearch/io/bulk_sink.rb", "lib/elasticsearch/io/chunked_sender.rb", "lib/elasticsearch/logging.rb", "lib/elasticsearch/rake/tasks.rb", "lib/elasticsearch/rake/tasks/index_dump.rb", "lib/elasticsearch/rake/tasks/seeder.rb", "lib/elasticsearch/rake/tasks/version.rb", "lib/elasticsearch/template/compiler.rb", "lib/elasticsearch/template/mappings_reader.rb", "lib/river/checks_index_and_river_in_sync.rb", "lib/river/helper.rb", "lib/river/reindexer.rb", "lib/river/river_sync.rb", "lib/river/tasks/reindex.rake", "spec/integration/elasticsearch/template/compiler_spec.rb", "spec/integration/elasticsearch/template/mappings_reader_spec.rb", "spec/integration/examples/templates/include/mappings/alias.yml", "spec/integration/examples/templates/include/mappings/bar.yml", "spec/integration/examples/templates/include/settings.yaml", "spec/integration/examples/templates/simple/mappings/bar.yml", "spec/integration/examples/templates/simple/mappings/foo.yml", "spec/integration/examples/templates/simple/settings.yaml", "spec/integration/examples/templates/simple/template_pattern", "spec/spec_helper.rb", "spec/unit/elasticsearch/io/chunked_sender_spec.rb", "test/test_helper.rb", "test/test_reindexer.rb", "test/test_river_sync.rb"]
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib", "lib/river"]
